@@ -1,1 +1,15 @@
 test port 24
+
+problemas a fazer deploy:
+
+nao aparecia a pasta build nem o ficheiro netlify.toml e por isso dava erro ao fazer deploy
+tambem nao tinha identificado bem o directorio a aceder pelo netlify
+o comando para dar incio a app estava correto e bem definido, tem que estar igual ao ficheiro toml
+
+para atualizar o git hub:
+
+1 git add .
+2 git commit -m "mensagem para saber o que alterou"
+3 git push origin main
+
+app online jä, deu certo
