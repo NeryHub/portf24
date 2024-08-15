@@ -1,0 +1,70 @@
+/* src/components/About.css */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-text {
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-image {
+    max-width: 200px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #333;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+    }
+  
+    .about-text {
+      margin-bottom: 20px;
+    }
+  
+    .about-image {
+      margin-top: 20px;
+    }
+  }
+  
