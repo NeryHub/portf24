@@ -1,18 +1,18 @@
 // src/components/Home.js
 
 import React from 'react';
-import './Home.css'; // Importar o arquivo CSS para estilização
+import './Home.css';
 
 const Home = () => {
   return (
-    <section id="home" className="home">
-      <div className="home-content">
-        <h1>Olá, eu sou [Seu Nome]</h1>
-        <p>Sou um desenvolvedor web apaixonado por criar soluções inovadoras e funcionais.</p>
-        <a href="#portfolio" className="btn-main">Veja Meu Trabalho</a>
-      </div>
-      <div className="home-image">
-        <img src="/path/to/your/image.jpg" alt="Imagem de Destaque" />
+    <section className="hero">
+      <video className="background-video" autoPlay loop muted>
+        <source src="/multimedia/backgv.mp4" type="video/mp4" />
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+      <div className="hero-content">
+        <h1>Bem-vindo ao Meu Site</h1>
+        <p>Explore meu portfólio e veja meus projetos.</p>
       </div>
     </section>
   );
