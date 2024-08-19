@@ -1,33 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer.js';
-import Home from './components/Home.js';
-import  About from './components/About.js';
-import  Portfolio from './components/Portfolio.js';
+
 
 function App() {
   return (
     <div className="App">
-       <Navbar />
-       <Home />
-       <About />
-       <Portfolio />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Nery Nery Nery Nery versao 2
-         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <Footer />
+      <Navbar />
+      <div className="Hero-Section">
+        <div className="Avatar">avatar
+        </div>
+        <div className="Title">titulo welcom
+
+        </div>
+      </div>
+      <div className="About-Section">
+        <h1 class="title">Título Centralizado</h1>
+        <div className='fotoDescr'>
+          <div className='image'></div>
+          <div className='descr'>
+            <h2>background</h2>
+            <p>descricao</p>
+          </div>
+
+
+        </div>
+      </div>
+      <div className="About-Section">
+        <h1 class="title">Work exp</h1>
+        <div className='fotoDescr'>
+          
+          <div className='descr'>
+            <h2>background</h2>
+            <p>descricao</p>
+          </div>
+          <div className='image'></div>
+
+
+          <div className='image'></div>
+          <div className='descr'>
+            <h2>background</h2>
+            <p>descricao</p>
+          </div>
+
+
+        </div>
+      </div>
     </div>
   );
 }

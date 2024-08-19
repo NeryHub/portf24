@@ -2,6 +2,74 @@
   text-align: center;
 }
 
+.Hero-Section {
+  background-color: #61fb75;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.About-Section {
+  background-color: #61e9fb;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Organiza os filhos verticalmente */
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.title {
+  margin: 0;
+  /* Remove margens padrão do título */
+}
+
+.fotoDescr {
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.descr {
+  text-align: left ;
+  width: 50%;
+}
+
+.image {
+ 
+  height: 300px;
+  width: 300px;
+  background-color: #61fb75;
+}
+
+.Avatar {
+  flex: 1;
+  /* Faz com que ambos os itens ocupem o mesmo espaço */
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  background-color: #61dafb;
+  height: 20px;
+  box-sizing: border-box;
+}
+
+.Title {
+  flex: 1;
+  /* Faz com que ambos os itens ocupem o mesmo espaço */
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  background-color: #fb6b61;
+  height: 20px;
+  box-sizing: border-box;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -32,7 +100,19 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .Hero-Section {
+    flex-direction: column;
+    /* Alinha os itens verticalmente em telas menores */
+  }
+  .descr {
+    text-align: center ;
+    width: 50%;
   }
 }
